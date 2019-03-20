@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-app = flask(__name__)
+app = Flask(__name__)
 
 title = "Jinja Practice"
 
@@ -8,3 +8,5 @@ title = "Jinja Practice"
 def index():
     render_template('home.html')
 
+if __name__ == "__main__":
+    app.run(debug=True)
