@@ -8,5 +8,9 @@ title = "Jinja Practice"
 def index():
     render_template('home.html', title=title)
 
+@app.route('/about')
+def about():
+    render_template('about.html', title=title)
+
 if __name__ == "__main__":
     app.run(debug=True)
