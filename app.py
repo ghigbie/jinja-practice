@@ -6,7 +6,7 @@ title = "Jinja Practice"
 
 @app.route('/')
 def index():
-    render_template('home.html')
+    render_template('home.html', title=title)
 
 if __name__ == "__main__":
     app.run(debug=True)
